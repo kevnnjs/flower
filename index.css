@@ -989,30 +989,31 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 }
 
 .flower__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 25%; /* Ajuste conforme necessário */
-    left: 50%; /* Ajuste conforme necessário */
-    font-family: "Great Vibes", cursive;
+    top: 25%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.5rem; /* Tamanho da fonte */
-    color: rgb(0, 0, 255); /* Cor inicial (azul) */
-    text-shadow: 
-        0 0 5px rgba(0, 0, 255, 0.5), 
-        0 0 10px rgba(0, 0, 255, 0.5);
-    animation: fadeIn 2s ease-in forwards, colorChange 6s cubic-bezier(0.4, 0, 0.2, 1) infinite; /* Aumentei a duração */
-    user-select: none; /* Impede a seleção do texto */
-    white-space: nowrap; /* Impede quebra de linha */
+    font-family: "Great Vibes", cursive;
+    font-size: 4rem;
+    color:#65e6cc;
+    text-shadow: 0 0 10px #65e6cc;
+    animation: fadeIn 2s ease-in forwards, colorChange 3s infinite;
+    user-select: none;
+    gap: 1rem;
+    white-space: nowrap;
 }
 
-
-
-@keyframes colorChange {
-    0% { color: rgb(0, 0, 255); } /* Azul Escuro */
-    25% { color: rgb(0, 128, 255); } /* Azul Claro */
-    50% { color: rgb(0, 255, 255); } /* Ciano */
-    75% { color: rgb(173, 216, 230); } /* Azul Bebê */
-    100% { color: rgb(0, 0, 255); } /* Azul Escuro */
+.profile-picture {
+    border: 1px solid #65e6cc;
+    border-radius: 50%;
+    width: 125px; 
+    height: 125px; 
+    box-shadow: 0 0 10px #65e6cc; /* Sombra similar à borda */
 }
+
 
 @keyframes fadeIn {
     0% {
