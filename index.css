@@ -1015,7 +1015,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     border-radius: 50%;
     width: 125px; 
     height: 125px; 
-    box-shadow: 0 0 10px #65e6cc; /* Sombra similar à borda */
+    box-shadow: 0 0 8px #65e6cc; /* Sombra similar à borda */
 }
 
 
